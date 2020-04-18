@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../_src/Fundo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(218, 218, 218, 0.699);
+    background: rgba(184, 184, 184, 0.829);
+    padding: 3% 4%;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: url(../_src/logo_mobile.png) center center/60px no-repeat;
+    font-size: 0;
+}
+
+.button_menu {
+    float: right;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    border-radius: 60px;
+    background: linear-gradient(to top left, rgb(94, 66, 65), rgb(45, 63, 49), rgb(73, 99, 51));
+}
+
+/* Nav */
+.menu {
+    display: none;
+    width: 100%; 
+    height: 100%;
+    position: fixed;
+    background:linear-gradient(to top left, rgb(94, 66, 65), rgb(45, 63, 49), rgb(73, 99, 51));
+    opacity: .9;
+    top: 0;
+    left: 0;
+}
+
+.button_close {
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu li {
+    padding: 2%;
+}
+
+.menu li a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    padding: 2% 2%;
+
+}
+
+.menu li a:hover {
+    background-color: rgb(161, 9, 39);
+    transition: ease-in 500ms;
+}
+
+/*Mensagem*/
+.mensagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.mensagem h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+    margin: 5%;
+    color: #f9ca24;
+}
+.mensagem h3 {
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin: 5%;
+    color: #c7ecee;
+}
+
+/*footer*/
+.rodape {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rodape a {
+    font-size: 1.1em;
+    color: rgba(185, 185, 185, 0.932);
+    text-decoration: none;
+}
