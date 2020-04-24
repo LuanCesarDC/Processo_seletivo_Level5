@@ -1,132 +1,159 @@
+/*****RESET*****/
 * {
     margin: 0;
     padding: 0;
-    font-size: 100%;
-    border: none;
-    outline: none;
-    font-weight: 300;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
-
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
 body {
-    width: 100%;
+    background-color: #3d3d3d;
+}
+main {
     height: 100vh;
-    background: url(../_src/Fundo1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: table;
 }
-
-/* Header */
+/******Header******/
 .header {
-    position: fixed;
     width: 100%;
-    height: 80px;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.699);
-    background: rgba(184, 184, 184, 0.829);
-    padding: 3% 4%;
+    height: 18vh;
+    min-height: 80px;
+    display: block;
+    position: absolute;
+    background-color: #e4e4e4;
+    top: 0;
+    left: 0;
+    padding: 2% 4%;
+    z-index: 11;
 }
-
 .logo {
-    width: 60px;
-    height: 60px;
-    float: left;
-    background: url(../_src/logo_mobile.png) center center/60px no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 0;
-}
-
-.button_menu {
-    float: right;
+    background: url(../_src/logo_mobile.png) center center/60px no-repeat;
     width: 60px;
     height: 60px;
-    text-align: center;
-    color: #fff;
-    border-radius: 60px;
-    background: linear-gradient(to top left, rgb(94, 66, 65), rgb(45, 63, 49), rgb(73, 99, 51));
+    vertical-align: top;
+    border-radius: 10px;
 }
-
-/* Nav */
+/****Header-MENU****/
 .menu {
-    display: none;
-    width: 100%; 
-    height: 100%;
+    width: 100%;
+    height: 85vh;
+    display: block;
     position: fixed;
-    background:linear-gradient(to top left, rgb(94, 66, 65), rgb(45, 63, 49), rgb(73, 99, 51));
-    opacity: .9;
+    left: 0;
+    top: 18vh;
+    z-index: 10;
+    overflow: hidden;
+    max-height: 0;
+}
+.button_menu { 
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(rgb(0, 162, 232), rgb(237, 28, 36));
+    width: 60px;
+    height: 60px;    
+    vertical-align: top;
+    border-radius: 100%;
+    right: 20px;
+    cursor: pointer;
+}
+.menu ul {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(#e4e4e4, rgba(82, 198, 247, 0.904), rgba(228, 83, 88, 0.863));/* #e4e4e4;*/
     top: 0;
     left: 0;
 }
-
-.button_close {
-    font-size: 3.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    float: right;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.menu ul {
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-
 .menu li {
-    padding: 2%;
+    display: block;
+    padding: 4% 2%;
 }
-
 .menu li a {
-    font-size: 2em;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 2px 2px 3px black;
-    padding: 2% 2%;
-
+    color: rgb(48, 48, 48);
+    font-size: 20pt;
+    transition: linear 200ms;
+    padding: 15px;
+    border-radius: 5px;
 }
-
 .menu li a:hover {
-    background-color: rgb(161, 9, 39);
-    transition: ease-in 500ms;
+    color: rgb(237, 28, 36);
+    background-color: rgb(0, 162, 232);
 }
-
-/*Mensagem*/
-.mensagem {
+.show {
+    max-height: 85vh;
+}
+/***Footer***/
+.footer {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
-}
-.mensagem h2 {
-    font-size: 2em;
-    font-weight: bold;
     text-align: center;
-    text-shadow: 1px 2px 2px black;
-    margin: 5%;
-    color: #f9ca24;
+    top: 1000px;
+    height: 30px;
 }
-.mensagem h3 {
-    font-size: 2em;
-    font-weight: lighter;
+.footer a{
+    color: white;
+}
+/*****Banner*****/
+.banner {
+    background: url(../_src/Fundo3.jpg) center center no-repeat fixed;
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 18vh;
+    padding: 3% 4%;
+}
+.banner h2, h3 {
+    background-color: rgba(0, 0, 0, 0.199);
+    color: white;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
-    margin: 5%;
-    color: #c7ecee;
+    margin-top: 30px;
+}
+.banner h2 {
+    font-weight: 600;
 }
 
-/*footer*/
-.rodape {
+/*Imagem do Dia*/
+div.img_day {
+    display: inline-block;
     position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: rgb(129, 129, 129);
+    top: 50%;
+    height: 320px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border: solid 3px rgb(173, 173, 173);
 }
+div.img_day h2 {
+    font-weight: 600;
+    font-size: 22pt;
+    margin: 10px;
+}
+iframe {
+    position: absolute;
 
-.rodape a {
-    font-size: 1.1em;
-    color: rgba(185, 185, 185, 0.932);
-    text-decoration: none;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
 }
