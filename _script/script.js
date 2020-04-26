@@ -1,6 +1,9 @@
-$(".button_menu").click(function(){
-    $(".menu").toggleClass("show");
+$(document).ready(function(){
+    $(".button_menu").click(function(){
+        $(".menu").toggleClass("show");
+    })
 })
+    
 
 $.ajax({
     url: "https://api.nasa.gov/planetary/apod?api_key=5S0OhioTtOCkLvlYGiKQOEpy9K9mn2aTRRPdzwi8",
