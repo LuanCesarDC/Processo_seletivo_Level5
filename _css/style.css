@@ -31,10 +31,10 @@ body {
     position: fixed;
     width: 60px;
     height: 60px;
-    background-size: cover;
+    background-size: contain;
     float: left;
     top: 0;
-    background: url(../_src/logo_mobile.png) center center no-repeat;
+    background: url(../_src/logo_mobile2.jpg) center center no-repeat;
     margin: 0px 18px;
     font-size: 0;
     z-index: 11;
@@ -276,6 +276,48 @@ article p#img_title{
     color: crimson;
     font-weight: bold;
 }
+/***Fale Conosco***/
+.container-form {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    padding: 30px;
+}
+.container-form h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 30px 0 0 0;
+}
+.formulario-contato {
+    max-width: 800px;
+    margin: auto;
+}
+.form-group {
+    margin: 10px;
+}
+.form-group input{
+    width: 100%;
+    height: 27px;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px #130f40;
+    background-color: #464d57;
+}
+.form-group textarea {
+    width: 100%;
+    color: rgb(209, 209, 209);
+    border-radius: 5px;
+    border: solid 2px #130f40;
+    background-color: #464d57;
+}
+.form-group input[type="submit"]{
+    color: white;
+    background-color: #30336b;
+}
+
 @media screen and (min-width: 400px) {
     .logo {
         width: 240px;
@@ -300,6 +342,14 @@ article p#img_title{
     }
     .tipo-inform {
         font-size: 20px;
+    }
+    /*Fale Conosco*/
+    .form-group input{
+        height: 25px;
+        font-size: 20px;
+    }
+    .form-group textarea {
+        font-size: 22px;
     }
 }
 
@@ -366,6 +416,10 @@ article p#img_title{
     .header h2 {
         margin: 0 30px;
     }
+    .footer {
+        font-size: 20pt;
+    }
+    /*Sobre*/
     .a-instituicao {
         top: 180px;
         font-size: 22pt;
@@ -373,7 +427,16 @@ article p#img_title{
     .a-instituicao h1 {
         font-size: 24pt;
     }
-    .footer {
-        font-size: 20pt;
+    /*Fale conosco*/
+    .form-group input{
+        height: 40px;
+        font-size: 28px;
     }
+    .form-group textarea {
+        font-size: 28px;
+    }
+    .form-group input[type="submit"]{
+        height: 40px;
+    }
+
 }
