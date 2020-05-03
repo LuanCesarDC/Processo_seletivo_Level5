@@ -7,10 +7,11 @@
     <meta name="keywords" content="Física, Química, Matemática, Astronomia">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Luan César">
-    <title>Site Level</title>
+    <title>Stokes Science</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a71087251f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./_src/logo_mobile.png">
     <link rel="stylesheet" href="_css/style.css">
 </head>
@@ -20,7 +21,6 @@
         <header class="header">
             <a href="index.html"><h1 class="logo">Stokes - Divulgação científica</h1></a>
             <button class="button_menu"><i class="fa fa-bars fa-lg"></i></button>
-            <h2>"Somewhere, something incredible is waiting to be known"</h2>
             <nav class="menu">
                 <ul class="show">
                     <li><a href="index.html">Home</a></li>
@@ -29,15 +29,41 @@
                     <li><a href="#">Jogos</a></li>
                     <li><a href="covid.html">COVID-GO</a></li>
                 </ul>
-            </nav>
+            </nav>    
         </header>
-        <main class="content">
-            <div class="img_day" id="img_day"></div>
-            <article>
-                <p id="img_title"></p>
-                <p id="explanation"></p>
-            </article>
-        </main>
+        <section class="covid-info">
+            <div class="covid-inner-width">
+                <h1>Covid19 - Goiás</h1>
+                <div class="borda"></div>
+                <div class="container-infos-covid">
+                    <div class="tipo-inform">
+                        <div class="icone-inform">
+                            <i class="fas fa-viruses"></i>
+                        </div>
+                        <div class="titulo-inform">Casos Confirmados</div>
+                        <div class="descricao-inform" id="confirm"></div>
+                    </div>
+                </div>
+                <div class="container-infos-covid">
+                    <div class="tipo-inform">
+                        <div class="icone-inform">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="titulo-inform">Casos Suspeitos</div>
+                        <div class="descricao-inform" id="suspeito"></div>
+                    </div>
+                </div>
+                <div class="container-infos-covid">
+                    <div class="tipo-inform">
+                        <div class="icone-inform">
+                            <i class="fas fa-skull-crossbones"></i>
+                        </div>
+                        <div class="titulo-inform">Mortes</div>
+                        <div class="descricao-inform" id="mortes"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer">
             <a href="https://github.com/LuanCesarDC" target="_blank">&copy; Luan César</a>
         </footer>

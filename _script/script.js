@@ -17,3 +17,12 @@ $.ajax({
         document.getElementById("explanation").innerText = whatyougot.explanation;
     }
 });
+
+$.ajax({
+    url: "https://covidgoias.ufg.br/service/summary/data?cd_geocmu=52&lang=pt-br",
+    success: function(whatyougot){
+        document.getElementById("confirm").innerText = whatyougot.resumed.confirmados;
+        document.getElementById("suspeito").innerText = whatyougot.resumed.suspeitos;
+        document.getElementById("mortes").innerText = whatyougot.resumed.obitos;
+    }
+});
