@@ -116,7 +116,7 @@ body {
 
 /*Imagem do Dia*/
 div.img_day {
-    display: inline-block;
+    display: block;
     width: 100%;
     background-color: rgb(129, 129, 129);
     top: 50%;
@@ -130,9 +130,7 @@ div.img_day h2 {
     margin: 10px;
 }
 iframe {
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   padding: 2px;
 }
 article p#explanation{
     color: white;
@@ -383,6 +381,10 @@ article p#img_title{
     }
     .button_menu {
         display: none;
+    }
+    iframe {
+        width: 630px;
+        height: 472px;
     }
     /*Sobre*/
     .a-instituicao {
